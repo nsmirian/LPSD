@@ -1,34 +1,21 @@
 %% script for PolariX time calibration for screen OTR9FL2XTDS
 %
+% swesch - 8th Sep 2019 - v1: first script 
 % 
-% 
-% (a) no resolution measurement
 % v2: add timecal_streak to calculate time resolution, last 1st Nov
 
-%
-function get_timecalibration_OTR9FL2XTDS(start_actuator, end_actuator, block_laser, num_bgr, num_sig, num_actuator)
+function get_timecalibration_OTR9FL2XTDS(start_actuator, end_actuator, num_sig)
     
 %% config
 
 %     comment         = 'FL2 PolariX';
 
-    flag_save       = 1;
-    flag_act        = 1;
+    
     flag_pause      = 1; % make a pause between reach goal current and take measurement
-
-    % XTDS phase
-%     start_actuator  = 119; % in deg
-%     end_actuator    = 125; % in deg
-
-%     num_actuator    = 5;    % set points
-%     num_bgr         = 10;    % number of single background images per set point
-%     num_sig         = 10;    % number of single measurement per set point
 
 % 	bgr_method = 0; % 1 = use injector laser; 0 = use trigger delay
 
     fontSize        = 14;
-
-
 %% 
 
     % addresses
