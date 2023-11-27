@@ -1,13 +1,12 @@
 %% script for PolariX time calibration for screen OTR9FL2XTDS
 %
-% swesch - 8th Sep 2019 - v1: first script 
+% 
 % 
 % (a) no resolution measurement
 % v2: add timecal_streak to calculate time resolution, last 1st Nov
 
-% clear all
-% close all
-function get_timecalibration_OTR9FL2XTDS(start_actuator, end_actuator, block_laser, num_bgr, num_sig, num_actuator, msgLoc, comment)
+%
+function get_timecalibration_OTR9FL2XTDS(start_actuator, end_actuator, block_laser, num_bgr, num_sig, num_actuator)
     
 %% config
 
